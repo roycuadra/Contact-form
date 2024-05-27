@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+    href="https://fonts.google.com/specimen/Karla:ital,wght@0,200..800;1,200..800&display=swap"
+    rel="stylesheet"" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./index.js" defer></script>
+    <title>Contact Form</title>
+  </head>
+  <body>
+    <div class="container">
+      <h3>Contact Form</h3>
+      <form class="form">
+        <div id="fname-container">
+          <label for="input-fname">First Name</label>
+          <input type="text" id="input-fname" />
+        </div>
+        <div id="lname-container">
+          <label for="input-lname" title="Last Name">Last Name</label>
+          <input type="text" id="input-lname" />
+        </div>
+        <div id="email-container">
+          <label for="input-email">Email Addres</label>
+          <input type="email" id="input-email" />
+        </div>
+        <div>
+          <label>Query Type</label>
+          <div class="query-type">
+            <div class="radio-container">
+              <label class="radio-label" for="qry-general">
+                General Enquiry
+                <input
+                  type="radio"
+                  id="qry-general"
+                  name="qry-type"
+                  value="qry-general"
+                  checked
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+            <div class="radio-container">
+              <label class="radio-label" for="qry-support">
+                General Enquiry
+                <input
+                  type="radio"
+                  id="qry-support"
+                  name="qry-type"
+                  value="qry-general"
+                />
+                <span class="checkmark"></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <div id="msg-container">
+          <label for="message">Message</label>
+          <textarea id="message"></textarea>
+        </div>
+        <div class="chbox-container">
+          <label class="chbox-label">
+            I consent to being contacted by the team
+            <input type="checkbox" id="chbox-consent" />
+            <span class="chbox-checkmark"></span>
+          </label>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <div class="success hide">
+      <span class="close">&times;</span>
+      <div class="msg-header">
+        <img src="./assets/images/icon-success-check.svg" />
+        <h3>Message Sent!</h3>
+      </div>
+
+      <p>Thanks for completing the form. We'll be in touch soon!</p>
+    </div>
+    <div class="background hide"></div>
+  </body>
+</html>
